@@ -1,0 +1,46 @@
+
+#requestsBox{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: 	#6A5ACD; */
+    /* background-color: 	#6959CD; */
+    border-left: 3px solid black;
+}
+
+#titleText{
+    margin-top: 15px;
+    color: black;
+    font-size: 18pt;
+}
+
+#boxDataTable{
+    width: 96%;
+    margin-bottom: 10px;
+    display: none;
+}
+
+#dataTable{
+	width: 100%;
+}
+
+.buttons {
+    width: 95%;
+}
+
+@media (max-width: 800px) {
+
+    #bottomBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #requestsBox{
+        width: 100%;
+        border: none;
+        border-top: 3px solid black;
+    }
+}

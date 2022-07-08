@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<title>Search Requests</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/globalstyle.css">
+<link rel="stylesheet" href="css/adminhome.css">
+</head>
+
+<body>
+	<div id="frame">
+		<div id="container">
+			<div id="internalBox">
+				<div id="upbox">
+					<label id="vehicleRegister">Online Vehicle Registration</label>
+				</div>
+				<div id="bottomBox">
+					<div id="buttonsBox">
+						<a class="buttons" id="adminHome" href="adminHome">Home</a> 
+						<a class="buttons" id="login" href="login">Logout</a>
+					</div>
+					<div id="requestsBox">
+						<h1 id="titleText">Search Requests</h1>
+						<div id="searchFilters">
+							<div class="rowFilters">
+								<label for="">Status:</label> <select name="" id="status"
+									class="dropdown">
+									<option value="PENDING">Pending</option>
+									<option value="APPROVED">Approved</option>
+									<option value="REJECTED">Rejected</option>
+								</select>
+							</div>
+
+							<div class="rowFilters">
+								<label for="">RTO Office:</label> <select name="" id="RTOOffice"
+									class="dropdown">
+									<option value="Chennai">Chennai</option>
+									<option value="Hyderabad">Hyderabad</option>
+									<option value="Délhi">Délhi</option>
+									<option value="Pune">Pune</option>
+									<option value="Bangalore">Bangalore</option>
+								</select>
+							</div>
+						</div>
+						<div class="buttonBox">
+							<button class="buttons" id="search"
+								onclick="searchRecordsRequests()">Search</button>
+						</div>
+						<div id="boxDataTable">
+							<table border="1" id="dataTable">
+								<tr>
+									<th class="thTable">Request ID</th>
+									<th class="thTable">Name</th>
+									<th class="thTable">Make</th>
+									<th class="thTable">Model</th>
+									<th class="thTable">RTO Office</th>
+									<th class="thTable">Status</th>
+								</tr>
+
+							</table>
+						</div>
+						<div id="errors"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquerylib.js"></script>
+	<script type="text/javascript" src="js/adminHome.js"></script>
+
+</body>
+
+</html>

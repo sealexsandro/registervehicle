@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/globalstyle.css">
+    <link rel="stylesheet" href="css/registrationform.css">
+</head>
+
+<body>
+    <div id="frame">
+        <div id="container">
+            <div id="internalBox">
+                <div id="upbox">
+                	<label id="vehicleRegister">Online Vehicle Registration</label>
+                </div>
+                <div id="bottomBox">
+                    <div id="buttonsBox">
+                        <a class= "buttons" id="newRegistration" href="newRegistration">Home</a>
+                        <a class= "buttons" id="requests" href="myRequests">My Requests</a>
+                        <a class= "buttons" id="login" href="login">Logout</a>
+                    </div>
+                    <div id="formBox">
+                        <h1 id="titleText">Registration Form</h1>
+                        <div id="errors">
+                        </div>
+                        <div id="inputRow">
+                            <div class="inputColumn">
+                                <div class="rowDetails">
+                                    <label for="">Name:</label>
+                                    <input type="text" placeholder="Name" id="name" >
+                                </div>
+                                <div class="rowDetails">
+                                    <label for="">Address:</label>
+                                    <input type="text" placeholder="Address" id="address">
+                                </div>
+                                <div class="rowDetails">
+                                    <label for="">Gender:</label>
+                                    <input type="text" placeholder="Gender" id="gender" class="inputData">
+                                </div>
+                                <div class="rowDetails">
+                                    <label for="">Age:</label>
+                                    <input type="number" placeholder="Age" id="age" class="inputData">
+                                </div>
+                                <div class="rowDetails">
+                                    <label for="">RTO Office:</label>
+                                    <select name="" id="RTOOffice" class="dropdown">
+                                        <option value="Chennai">Chennai</option>
+                                        <option value="Hyderabad">Hyderabad</option>
+                                        <option value="Délhi">Délhi</option>
+                                        <option value="Pune">Pune</option>
+                                        <option value="Bangalore">Bangalore</option>
+                                    </select>
+                                </div>
+                                <div class="rowDetails">
+                                    <label for="">Insurance Number:</label>
+                                    <input type="text" placeholder="Insurance Number" id="insuranceNumber"
+                                        class="inputData">
+                                </div>
+                            </div>
+                            <div class="inputColumn">
+                                <div class="rowDetails">
+                                    <label for="">Vehicle Type:</label>
+                                    <select name="" id="vehicleType" class="dropdown">
+                                        <option value="Two wheeler">Two wheeler</option>
+                                        <option value="Four wheeler">Four wheeler</option>
+                                        <option value="Three wheeler">Three wheeler</option>
+                                        <option value="Heavy vehicle">Heavy vehicle</option>
+                                    </select>
+                                </div>
+                                <div class="rowDetails">
+                                    <label for="">Engine No:</label>
+                                    <input type="text" placeholder="Engine Number" id="engineNo">
+                                </div>
+                                <div class="rowDetails">
+                                    <label for="" class="labelText">Model:</label>
+                                    <input type="text" placeholder="City" id="model">
+                                </div>
+                                <div class="rowDetails">
+                                    <label for="">Make:</label>
+                                    <input type="text" placeholder="Make" id="make">
+                                </div>
+                                <div class="rowDetails">
+                                    <label for="">DL Number:</label>
+                                    <input type="text" placeholder="DL Number" id="DLNumber">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class= "buttons" id="register" onclick="saveVehicleRecord()">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquerylib.js"></script>  
+    <script type="text/javascript" src="js/registrationForm.js"></script>
+
+</body>
+
+</html>

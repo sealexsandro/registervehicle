@@ -1,0 +1,99 @@
+
+#internalBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    /* border: 1px solid gray; */
+}
+
+
+#titleText{
+    margin-top: 15px;
+    color: white;
+    font-size: 20pt;
+}
+
+#inputRow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 0 20px;
+    margin-right: 50px;
+    justify-content: space-between;
+}
+
+.inputColumn{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rowDetails{
+    display: flex;
+    flex-direction: row;
+    margin: 4px 0 15px 20px;
+    justify-content: flex-start;
+}
+
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+input {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1.1em sans-serif;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+}
+
+.dropdown{
+    width: 300px;
+    font: 1.1em sans-serif;
+}
+
+.buttons {
+    margin-top: 15px;
+    width: 140px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+
+#errors{
+    font-size: 15pt;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+
+    #bottomBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #registrationBox{
+        border: none;
+        border-top: 3px solid black;
+    }
+    #inputRow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inputColumn{
+        width: 100%;
+    }
+
+}
